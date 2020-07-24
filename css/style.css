@@ -94,13 +94,15 @@ nav{
     color: #fff;
     z-index: 1;
     position: fixed;
-    text-transform: uppercase;
     font-size: 18px;
 }
 .navbar-brand{
     padding-left: 2rem;
     font-family: sin;
     font-size: 18px;
+}
+.nav-link{
+    text-transform: uppercase;
 }
 .active{
     color: #974f10;
@@ -315,6 +317,9 @@ var{
     padding: 0 40px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
 }
 .about-h5{
     color: #f2f2f2;
@@ -526,6 +531,9 @@ var{
         padding: 0 40px;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
     }
     .about-text{
         margin: 0 38px;
@@ -547,7 +555,8 @@ var{
     }
     .row4{
         padding: 0 0;
-        padding-left: 25px;
+        padding-left: 5px;
+        margin: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -784,6 +793,8 @@ var{
         width: 100%;
         display: flex;
         align-content: center;
+        justify-content: center;
+        margin: auto;
         margin-left: 5px;
     }
     .about-text{
@@ -808,6 +819,7 @@ var{
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        margin: auto;
     }
     .about-icon{
         display: flex;
@@ -1126,6 +1138,9 @@ var{
         padding: 0 40px;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
     .about-h5{
         color: #f2f2f2;
@@ -1404,6 +1419,9 @@ var{
         padding: 0 40px;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         margin-bottom: 30px;
     }
     .about-h5{
@@ -1494,8 +1512,10 @@ var{
         color: #fff;
         z-index: 1;
         position: fixed;
-        text-transform: uppercase;
         font-size: 18px;
+    }
+    .nav-link{
+        text-transform: uppercase;
     }
     .navbar-brand{
         padding-left: 2rem;
@@ -1712,6 +1732,9 @@ var{
         padding: 0 40px;
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
     }
     .about-h5{
         color: #f2f2f2;
