@@ -1009,7 +1009,7 @@ var{
         color: #F2994A;
         font-size: 24px;
         margin-left: 2.8rem;
-        margin-top: 2rem;
+        margin-top: 120px;
     }
     .project-h3{
         font-size: 40px;
@@ -1187,6 +1187,7 @@ var{
     .home{
         margin: 0 2rem;
         height: 90vh;
+        margin-bottom: 100px;
     }
     .home-col1{
         padding: 20px 10px;
@@ -1264,6 +1265,7 @@ var{
     
     .project{
         margin: 10px 2rem;
+        margin-bottom: 60px;
     }
     .project-col2{
         margin: 250px 0;
@@ -1288,7 +1290,7 @@ var{
         color: #F2994A;
         font-size: 24px;
         margin-left: 2.8rem;
-        margin-top: 2rem;
+        margin-top: 140px;
     }
     .project-h3{
         font-size: 40px;
