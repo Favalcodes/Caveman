@@ -14,16 +14,19 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="./css/ionicons-2.0.1/css/ionicons.min.css">
 
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Main css -->
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Caveman</title>
 </head>
 
-<body data-barba="wrapper">
-
-    <div class="load-container">
-        <div class="loading-screen"></div>
+<body>
+    
+    <div class="loader-bg">
+        <div class="loader"></div>
     </div>
 
     <header>
@@ -39,34 +42,35 @@
                         <a href="index.html" class="nav-link active" id="home">Home</a>
                     </li>
                     <li class="nav-item pr-4 pl-4">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item pr-4 pl-4">
-                        <a href="project.html" class="nav-link">Projects</a>
+                        <a href="#project" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item pr-4 pl-4">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main data-barba="container" data-barba-namespace="home">
-        <div class="row home">
-            <div class="col-md-5 home-col1">
+    <main>
+        <!-- Home -->
+        <div class="row home" id="home">
+            <div class="col-md-5 home-col1" data-aos="fade-right">
                 <img src="./images/Rectangle 1 (1).png" alt="home-img" class="home-img">
                 <div class="img-text">
                     <h5>Jane Doe</h5>
                     <p>Photography extraordinare</p>
                 </div>
             </div>
-            <div class="col-md-6 home-col2">
+            <div class="col-md-6 home-col2" data-aos="zoom-in">
                 <div class="home-text">
                     <h3>Let me take you on a Journey.</h3>
                     <p>This is not just another portfolio, its a whole encompassing experience. You get the opportunity
                         not just to see my works, but to follow each moment as if you were me.</p>
                 </div>
-                <a href="project.html"><button class="home-btn">Let's Begin</button></a>
+                <a href="#project"><button class="home-btn">Let's Begin</button></a>
             </div>
             <div class="col-md-1 static-col">
                 <ul class="icons">
@@ -82,9 +86,331 @@
                 </ul>
             </div>
         </div>
+
+        <!-- scroll button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><strong><i
+            class="ion-ios-arrow-thin-up"></i></strong></button>
+
+        <!-- About -->
+        <h4 class="about-h4">ABOUT ME</h4>
+        <div class="row about" id="about">
+            <div class="col-md-11">
+                <div class="row row2">
+                    <div class="col-md-4" data-aos="zoom-out">
+                        <img src="./images/Rectangle 11 (1).png" alt="" class="about-img">
+                    </div>
+                    <div class="col-md-8 about-text" data-aos="fade-left">
+                        <h6><strong>Welcome to my world, where curiosity meets pure genius</strong></h6>
+                        <p>Photography is more than just a profession to me; its my way of life. Life has so many
+                            beautiful moments, and i have taken it upon myself to capture them, freezing forever. It’s
+                            like a gift.</p>
+
+                        <p>Translating this to work, i am able to notice and capture just the right frames that
+                            communicate the feelings that my clients want to see.</p>
+
+                        <p>I am passionate about empowering you to tell your story through creative strategic services
+                            and documenting cherishable moments that you can look back on fondly for years to come.</p>
+                        <a href="#contact"><button class="about-btn">Schedule a meeting</button></a>
+                    </div>
+                </div>
+
+                <h6 class="about-h6">At a glance</h6>
+
+                <div class="row row3" data-aos="fade-up">
+                    <div class="col-md-4 about-col2">
+                        <label for="name">Name:</label> <var>Jane Doe</var><br>
+                        <label for="country">Country of Residence:</label> <var>Nigeria</var><br>
+                        <label for="freelance">Freelance:</label> <var>Available</var><br>
+                        <label for="travel">Available to Travel:</label> <var>Yes</var>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row row4">
+                            <div class="about-col1">
+                                <h5 class="about-h5">7+</h5>
+                                <p class="text">Years of<br> experience</p>
+                            </div>
+                            <div class="about-col1">
+                                <h5 class="about-h5">200+</h5>
+                                <p class="text">Satisfied<br> Clients</p>
+                            </div>
+                            <div class="about-col1">
+                                <h5 class="about-h5">60+</h5>
+                                <p class="text">Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="about-icon" data-aos="fade-down">
+                    <div class="first-row">
+                        <li class="abt-icon">
+                            <img src="./images/vector.svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/typcn_vendor-microsoft.svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/Vector (2).svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/logos_google.svg" alt="">
+                        </li>
+                    </div>
+                    <div class="second-row">
+                        <li class="abt-icon">
+                            <img src="./images/cib_hp.svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/logos_drone.svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/logos_ember.svg" alt="">
+                        </li>
+                        <li class="abt-icon">
+                            <img src="./images/logos_aws.svg" alt="">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project -->
+        <h4 class="project-h4">PROJECTS</h4>
+        <div class="row project" id="project">
+            <div class="col-md-11 project-col1">
+                <div class="row">
+                    <div class="col-md-1 project-col2">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Nature</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Musings</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">Potrait</a>
+                            <a class="nav-link" id="v-pills-food-tab" data-toggle="pill" href="#v-pills-food" role="tab"
+                                aria-controls="v-pills-food" aria-selected="false">Food</a>
+                        </div>
+                    </div>
+                    <div class="col-md-11 project-col3">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <div class="row row1">
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 5 (2).png" alt="project-img1" class="project-img1">
+                                    </div>
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">Random City Sunset</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal1">View
+                                            more</button>
+                                    </div>
+                                </div>
+                                <div class="row row7">
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">Red Riding Hood</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal2">View
+                                            more</button>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
+                                    </div>
+                                </div>
+                                <div class="row row1">
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 7.jpg" alt="project-img1" class="project-img1">
+                                    </div>
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">YUM!</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal3">View
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <div class="row row1">
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 5 (2).png" alt="project-img1" class="project-img1">
+                                    </div>
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">Random City Sunset</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal1">View
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <div class="row row7">
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">Red Riding Hood</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal2">View
+                                            more</button>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <div class="row row7">
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">Red Riding Hood</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal2">View
+                                            more</button>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-food" role="tabpanel"
+                                aria-labelledby="v-pills-food-tab">
+                                <div class="row row1">
+                                    <div class="col-md-8">
+                                        <img src="./images/Rectangle 7.jpg" alt="project-img1" class="project-img1">
+                                    </div>
+                                    <div class="col-md-4 robin">
+                                        <h3 class="text-dark project-h3">YUM!</h3>
+                                        <button class="project-btn" data-toggle="modal" data-target="#modal3">View
+                                            more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal boxes -->
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+
+                        <img src="./images/Rectangle 5 (2).png" alt="" class="h-100 w-100">
+                        <h4 class="project-h4">Random City Sunset</h4>
+                        <p class="pl-4 pr-4">
+                            This is a random text that gives more description to the image there
+                        </p>
+
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+
+                        <img src="./images/Rectangle 6 (1).png" alt="" class="h-100 w-100">
+                        <h4 class="project-h4">Red Robin Hood</h4>
+                        <p class="pl-4 pr-4">
+                            This is a random text that gives more description to the image there
+                        </p>
+
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+
+                        <img src="./images/Rectangle 7.jpg" alt="" class="h-100 w-100">
+                        <h4 class="project-h4">YUM!</h4>
+                        <p class="pl-4 pr-4">
+                            This is a random text that gives more description to the image there
+                        </p>
+
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                            data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="row contact" id="contact">
+            <div class="col-md-6 contact-col6" data-aos="fade-down">
+                <h4 class="contact-h4">Contact Me</h4>
+                <p>Don’t be shy, i would very much love to hear from you!</p>
+                <p>If you’re in owerri and are chanced to come in for a visit, that would be splendid! I always love a chance to geek over my new toys, lol
+                </p>
+
+                <strong><label for="address">Address:</label> <var class="var">Number 15, A place in space, Owerri, Imo state, Nigeria</var><br>
+                <label for="phone">Phone: </label><var class="var">+234 7088882345</var><br>
+                <label for="email">Email: </label><var class="var">random@mail.com</var></strong>
+                <p>You can fill the form below</p>
+                
+                <!-- form -->
+                <form action="" class="form-group form">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                    <input type="text" class="form-control" placeholder="Email" required>
+                    <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                    <button class="contact-btn">Send</button>
+                </form>
+            </div>
+            <div class="col-md-5 contact-col5" data-aos="flip-left">
+                <img src="./images/Rectangle 13 (3).png" alt="" class="contact-img">
+            </div>
+        </div>
+
     </main>
 
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -99,9 +425,8 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="./css/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

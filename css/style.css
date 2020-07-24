@@ -1,3 +1,48 @@
+.loader-bg{
+    position: fixed;
+    z-index: 99999;
+    background: #F2994A;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader::before, .loader::after{
+    content: '';
+    border: 1em solid #fff;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader::before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -36,15 +81,12 @@ nav{
     background-color: #fff;
     color: #000;
     z-index: 1;
-    position: relative;
+    position: fixed;
 }
 .navbar-brand{
     padding-left: 2rem;
     font-family: sin;
     font-size: 18px;
-}
-.navbar-collapse{
-    /* padding-right: 0.5rem; */
 }
 .active{
     color: #F2994A;
@@ -68,6 +110,7 @@ nav a:hover{
 }
 .home{
     margin: 0 2rem;
+    margin-bottom: 100px;
     height: 90vh;
 }
 .home-col1{
@@ -147,6 +190,7 @@ a .ion-social-twitter{
 
 .project{
     margin: 10px 2rem;
+    margin-bottom: 100px;
 }
 .project-col2{
     margin: 250px 0;
@@ -212,6 +256,7 @@ a .ion-social-twitter{
 }
 .about{
     margin: 20px 2.8rem;
+    margin-bottom: 100px;
 }
 .row2{
     margin-bottom: 32px;
@@ -221,6 +266,7 @@ a .ion-social-twitter{
     width: 100%;
     height: 360px;
     padding: 5px;
+    padding-left: 15px;
 }
 .about-text{
     margin-top: 11px;
@@ -237,6 +283,7 @@ a .ion-social-twitter{
 }
 .about-col2{
     line-height: 34px;
+    padding-left: 15px;
 }
 .about-h6{
     color: #F2994A;
@@ -332,25 +379,24 @@ var{
     border: none;
     font-size: 16px;
 }
-
-.loading-screen{
-    position: relative;
-    padding-left: 0;
-    padding-top: 0;
-    padding-right: 0;
-    background-color: #F2994A;
-    width: 0%;
-    height: 100%;
-}
-.load-container{
+#myBtn{
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    bottom: 70px;
+    right: 30px;
     z-index: 10;
-    pointer-events: none;
+    border: none;
+    outline: none;
+    background-color: #F2994A;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover{
+    background-color: #91490b;
 }
 
 /* Media Queries */
@@ -408,6 +454,7 @@ var{
         right: 0;
         top: auto;
         bottom: 0;
+        z-index: 10;
     }
     .icons{
         padding: 10px 0px;
@@ -655,6 +702,7 @@ var{
         right: 0;
         top: auto;
         bottom: 0;
+        z-index: 10;
     }
     .icons{
         padding: 10px 0px;
