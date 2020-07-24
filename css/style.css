@@ -1,7 +1,7 @@
 .loader-bg{
     position: fixed;
     z-index: 99999;
-    background: #F2994A;
+    background: #974f10;
     width: 100%;
     height: 100%;
 }
@@ -16,7 +16,7 @@
 }
 .loader::before, .loader::after{
     content: '';
-    border: 1em solid #1d1d1d;
+    border: 1em solid #ffffff;
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -63,6 +63,7 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #2b2a2a;
+    scroll-behavior: smooth;
 }
 .col-md-11, .col-md-1, .col-md-4, .col-md-8, .col-md-6, .col-md-5{
     position: relative;
@@ -93,6 +94,8 @@ nav{
     color: #fff;
     z-index: 1;
     position: fixed;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .navbar-brand{
     padding-left: 2rem;
@@ -100,14 +103,14 @@ nav{
     font-size: 18px;
 }
 .active{
-    color: #F2994A;
+    color: #974f10;
     font-weight: 600;
 }
 nav a{
     color: #fff;
 }
 nav a:hover{
-    color: #F2994A;
+    color: #974f10;
 }
 .home{
     margin: 0 2rem;
@@ -136,7 +139,7 @@ h5{
 }
 .img-text p{
     font-size: 16px;
-    color: #F2994A;
+    color: #974f10;
 }
 .home-col2{
     padding-top: 175px;
@@ -144,7 +147,7 @@ h5{
 }
 h3{
     font-size: 48px;
-    color: #F2994A;
+    color: #974f10;
 }
 .home-text{
     font-size: 16px;
@@ -170,16 +173,16 @@ h3{
     margin-bottom: 10px;
 }
 a .ion-social-dribbble{
-    color: #B2215A;
+    color: #f2f2f2;
 }
 a .ion-social-facebook{
-    color: #2D9CDB;
+    color: #f2f2f2;
 }
 a .ion-social-twitter{
-    color: #2F80ED;
+    color: #f2f2f2;
 }
 .home-btn{
-    background-color: #F2994A;
+    background-color: #974f10;
     height: 41px;
     width: 138px;
     color: #f2f2f2;
@@ -213,10 +216,10 @@ a .ion-social-twitter{
 .nav-pills .nav-link.active{
     background: none;
     border: none;
-    color: #F2994A;
+    color: #974f10;
 }
 .project-h4{
-    color: #F2994A;
+    color: #974f10;
     font-size: 24px;
     margin-left: 2.8rem;
     margin-top: 2rem;
@@ -230,6 +233,9 @@ a .ion-social-twitter{
     width: 100%;
     height: 300px;
     padding: 10px;
+}
+.cup{
+    border-radius: 20px;
 }
 .row1{
     margin-bottom: 20px;
@@ -246,7 +252,7 @@ a .ion-social-twitter{
 .project-btn{
     border: none;
     background: none;
-    color: #F2994A;
+    color: #974f10;
     font-size: 16px;
     width: 100px;
 }
@@ -254,7 +260,7 @@ a .ion-social-twitter{
 /* About page */
 
 .about-h4{
-    color: #F2994A;
+    color: #974f10;
     font-size: 24px;
     margin-left: 2.8rem;
     margin-top: 2rem;
@@ -280,7 +286,7 @@ a .ion-social-twitter{
     color: #f2f2f2;
 }
 .about-btn{
-    background-color: #F2994A;
+    background-color: #974f10;
     color: #f2f2f2;
     height: 53px;
     width: 205px;
@@ -293,7 +299,7 @@ a .ion-social-twitter{
     padding-left: 15px;
 }
 .about-h6{
-    color: #F2994A;
+    color: #974f10;
     font-size: 18px;
     margin-bottom: 32px;
 }
@@ -303,7 +309,7 @@ label{
 }
 var{
     font-style: normal;
-    color: #F2994A;
+    color: #974f10;
 }
 .row4{
     padding: 0 40px;
@@ -320,12 +326,12 @@ var{
     padding: 32px 0;
     width: 176px;
     height: 145px;
-    border: 1px solid #F2994A;
+    border: 1px solid #974f10;
     margin: 10px;
 }
 .text{
     font-size: 16px;
-    color: #F2994A;
+    color: #974f10;
 }
 .about-icon{
     display: flex;
@@ -352,7 +358,7 @@ var{
 /* Contact page */
 
 .contact-h4{
-    color: #F2994A;
+    color: #974f10;
     font-size: 24px;
     margin-bottom: 32px;
 }
@@ -377,7 +383,7 @@ var{
     color: #f2f2f2;
 }
 .form-control{
-    border: 1px solid #F2994A;
+    border: 1px solid #974f10;
     background: none;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -388,7 +394,7 @@ var{
 }
 .contact-btn{
     width: 100%;
-    background-color: #F2994A;
+    background-color: #974f10;
     height: 41px;
     border-radius: 5px;
     border: none;
@@ -403,7 +409,7 @@ var{
     z-index: 10;
     border: none;
     outline: none;
-    background-color: #F2994A;
+    background-color: #974f10;
     color: #fff;
     cursor: pointer;
     padding: 15px;
@@ -420,9 +426,10 @@ var{
 @media (max-width: 480px){
     body{
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
     .navbar-brand{
         padding-left: 0.5rem;
@@ -460,7 +467,7 @@ var{
     }
     h3{
         font-size: 24px;
-        color: #F2994A;
+        color: #974f10;
     }
     .home-text{
         font-size: 14px;
@@ -489,7 +496,7 @@ var{
         margin-top: 15px;
     }
     .home-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         width: 138px;
         border-radius: 5px;
@@ -504,7 +511,7 @@ var{
         margin-bottom: 76px;
     }
     .about-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 24px;
         margin-top: 2rem;
@@ -590,10 +597,10 @@ var{
     .nav-pills .nav-link.active{
         background: none;
         border: none;
-        color: #F2994A;
+        color: #974f10;
     }
     .project-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 24px;
         margin-top: 2rem;
@@ -626,7 +633,7 @@ var{
         align-self: inherit;
         border: none;
         background: none;
-        color: #F2994A;
+        color: #974f10;
         font-size: 14px;
         width: 100px;
     }
@@ -634,7 +641,7 @@ var{
     /* Contact page */
 
     .contact-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-bottom: 32px;
     }
@@ -656,14 +663,14 @@ var{
         color: #f2f2f2;
     }
     .form-control{
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         background: none;
         border-radius: 5px;
         margin-bottom: 20px;
     }
     .contact-btn{
         width: 100%;
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         border-radius: 5px;
         border: none;
@@ -674,9 +681,10 @@ var{
 @media (min-width: 481px) and (max-width: 767px){
     body{
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
     .navbar-brand{
         padding-left: 0.5rem;
@@ -714,7 +722,7 @@ var{
     }
     h3{
         font-size: 24px;
-        color: #F2994A;
+        color: #974f10;
     }
     .home-text{
         font-size: 14px;
@@ -743,7 +751,7 @@ var{
         margin-top: 15px;
     }
     .home-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         width: 138px;
         border-radius: 5px;
@@ -758,7 +766,7 @@ var{
         margin-bottom: 76px;
     }
     .about-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 24px;
         margin-top: 2rem;
@@ -844,10 +852,10 @@ var{
     .nav-pills .nav-link.active{
         background: none;
         border: none;
-        color: #F2994A;
+        color: #974f10;
     }
     .project-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 24px;
         margin-top: 2rem;
@@ -879,7 +887,7 @@ var{
     .project-btn{
         border: none;
         background: none;
-        color: #F2994A;
+        color: #974f10;
         font-size: 14px;
         width: 100px;
     }
@@ -887,7 +895,7 @@ var{
     /* Contact page */
 
     .contact-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-bottom: 32px;
     }
@@ -909,14 +917,14 @@ var{
         color: #f2f2f2;
     }
     .form-control{
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         background: none;
         border-radius: 5px;
         margin-bottom: 20px;
     }
     .contact-btn{
         width: 100%;
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         border-radius: 5px;
         border: none;
@@ -927,11 +935,12 @@ var{
 @media (min-width: 768px) and (max-width: 1023px){
     body{
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     .home{
         margin: 0 2rem;
-        height: 90vh;
+        height: 50vh;
     }
     .home-col1{
         padding: 20px 10px;
@@ -940,12 +949,12 @@ var{
     }
     .home-img{
         width: 100%;
-        height: 80vh;
+        height: 100%;
         left: 64px;
         margin-top: 20px;
     }
     .img-text{
-        bottom: 50px;
+        bottom: 10px;
         position: absolute;
         padding: 0 16px;
     }
@@ -955,10 +964,11 @@ var{
     }
     .img-text p{
         font-size: 16px;
-        color: #F2994A;
+        color: #974f10;
     }
     .home-col2{
         position: relative;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -968,8 +978,8 @@ var{
         padding-left: 20px;
     }
     h3{
-        font-size: 48px;
-        color: #F2994A;
+        font-size: 24px;
+        color: #974f10;
     }
     .home-text{
         font-size: 16px;
@@ -995,7 +1005,7 @@ var{
         margin-bottom: 10px;
     }
     .home-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         width: 138px;
         border-radius: 5px;
@@ -1027,10 +1037,10 @@ var{
     .nav-pills .nav-link.active{
         background: none;
         border: none;
-        color: #F2994A;
+        color: #974f10;
     }
     .project-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 2.8rem;
         margin-top: 120px;
@@ -1059,7 +1069,7 @@ var{
     .project-btn{
         border: none;
         background: none;
-        color: #F2994A;
+        color: #974f10;
         font-size: 16px;
         width: 100px;
     }
@@ -1067,7 +1077,7 @@ var{
     /* About page */
     
     .about-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 2.8rem;
         margin-top: 2rem;
@@ -1090,7 +1100,7 @@ var{
         padding-left: 20px;
     }
     .about-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 53px;
         width: 205px;
         border-radius: 5px;
@@ -1101,7 +1111,7 @@ var{
         line-height: 34px;
     }
     .about-h6{
-        color: #F2994A;
+        color: #974f10;
         font-size: 18px;
         margin-bottom: 32px;
     }
@@ -1110,7 +1120,7 @@ var{
     }
     var{
         font-style: normal;
-        color: #F2994A;
+        color: #974f10;
     }
     .row4{
         padding: 0 40px;
@@ -1127,12 +1137,12 @@ var{
         padding: 32px 0;
         width: 176px;
         height: 145px;
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         margin: 10px;
     }
     .text{
         font-size: 16px;
-        color: #F2994A;
+        color: #974f10;
     }
     .about-icon{
         position: absolute;
@@ -1162,7 +1172,7 @@ var{
     /* Contact page */
     
     .contact-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-bottom: 32px;
     }
@@ -1184,14 +1194,14 @@ var{
         color: #f2f2f2;
     }
     .form-control{
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         background: none;
         border-radius: 5px;
         margin-bottom: 20px;
     }
     .contact-btn{
         width: 100%;
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         border-radius: 5px;
         border: none;
@@ -1202,7 +1212,8 @@ var{
 @media (min-width: 1024px) and (max-width: 1200px){
     body{
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     .home{
         margin: 0 2rem;
@@ -1231,7 +1242,7 @@ var{
     }
     .img-text p{
         font-size: 16px;
-        color: #F2994A;
+        color: #974f10;
     }
     .home-col2{
         position: relative;
@@ -1245,7 +1256,7 @@ var{
     }
     h3{
         font-size: 48px;
-        color: #F2994A;
+        color: #974f10;
     }
     .home-text{
         font-size: 16px;
@@ -1271,7 +1282,7 @@ var{
         margin-bottom: 10px;
     }
     .home-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         width: 138px;
         border-radius: 5px;
@@ -1304,10 +1315,10 @@ var{
     .nav-pills .nav-link.active{
         background: none;
         border: none;
-        color: #F2994A;
+        color: #974f10;
     }
     .project-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 2.8rem;
         margin-top: 140px;
@@ -1336,7 +1347,7 @@ var{
     .project-btn{
         border: none;
         background: none;
-        color: #F2994A;
+        color: #974f10;
         font-size: 16px;
         width: 100px;
     }
@@ -1344,7 +1355,7 @@ var{
     /* About page */
     
     .about-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-left: 2.8rem;
         margin-top: 2rem;
@@ -1367,7 +1378,7 @@ var{
         padding-left: 20px;
     }
     .about-btn{
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 53px;
         width: 205px;
         border-radius: 5px;
@@ -1378,7 +1389,7 @@ var{
         line-height: 34px;
     }
     .about-h6{
-        color: #F2994A;
+        color: #974f10;
         font-size: 18px;
         margin-bottom: 32px;
     }
@@ -1387,7 +1398,7 @@ var{
     }
     var{
         font-style: normal;
-        color: #F2994A;
+        color: #974f10;
     }
     .row4{
         padding: 0 40px;
@@ -1405,12 +1416,12 @@ var{
         padding: 32px 0;
         width: 176px;
         height: 145px;
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         margin: 10px;
     }
     .text{
         font-size: 16px;
-        color: #F2994A;
+        color: #974f10;
     }
     .about-icon{
         position: absolute;
@@ -1440,7 +1451,7 @@ var{
     /* Contact page */
     
     .contact-h4{
-        color: #F2994A;
+        color: #974f10;
         font-size: 24px;
         margin-bottom: 32px;
     }
@@ -1462,17 +1473,329 @@ var{
         color: #f2f2f2;
     }
     .form-control{
-        border: 1px solid #F2994A;
+        border: 1px solid #974f10;
         background: none;
         border-radius: 5px;
         margin-bottom: 20px;
     }
     .contact-btn{
         width: 100%;
-        background-color: #F2994A;
+        background-color: #974f10;
         height: 41px;
         border-radius: 5px;
         border: none;
         font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav{
+        background-color: #1f1f1f;
+        color: #fff;
+        z-index: 1;
+        position: fixed;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .navbar-brand{
+        padding-left: 2rem;
+        font-family: sin;
+        font-size: 18px;
+    }
+    .active{
+        color: #974f10;
+        font-weight: 600;
+    }
+    nav a{
+        color: #fff;
+    }
+    nav a:hover{
+        color: #974f10;
+    }
+    .home{
+        margin: 0 2rem;
+        margin-bottom: 100px;
+        height: 90vh;
+    }
+    .home-col1{
+        padding: 20px 10px;
+        height: 100%;
+        align-items: center;
+    }
+    .home-img{
+        width: 397px;
+        height: 80vh;
+        left: 64px;
+        margin-top: 20px;
+    }
+    .img-text{
+        bottom: 40px;
+        position: absolute;
+        padding: 0 16px;
+    }
+    h5{
+        font-size: 24px;
+        color: #fff;
+    }
+    .img-text p{
+        font-size: 16px;
+        color: #974f10;
+    }
+    .home-col2{
+        padding-top: 175px;
+        padding-right: 40px;
+    }
+    h3{
+        font-size: 48px;
+        color: #974f10;
+    }
+    .home-text{
+        font-size: 16px;
+        color: #f2f2f2;
+    }
+    .static-col{
+        background: rgba(242, 153, 74, 0.2);
+        position: fixed;
+        height: 100vh;
+        right: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+    }
+    .icons{
+        text-align: center;
+        font-size: 24px;
+        flex-direction: column;
+    }
+    .icons li{
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    a .ion-social-dribbble{
+        color: #f2f2f2;
+    }
+    a .ion-social-facebook{
+        color: #f2f2f2;
+    }
+    a .ion-social-twitter{
+        color: #f2f2f2;
+    }
+    .home-btn{
+        background-color: #974f10;
+        height: 41px;
+        width: 138px;
+        color: #f2f2f2;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        animation: bounce 2s ease-out infinite;
+    }
+    
+    /* Project page */
+    
+    .project{
+        margin: 10px 2rem;
+        margin-bottom: 100px;
+    }
+    .project-col2{
+        margin: 250px 0;
+        padding-left: 7px;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-col3{
+        padding: 0 4rem;
+    }
+    .project .nav-link{
+        color: #BDBDBD;
+        background: none;
+        border: none;
+    }
+    .nav-pills .nav-link.active{
+        background: none;
+        border: none;
+        color: #974f10;
+    }
+    .project-h4{
+        color: #974f10;
+        font-size: 24px;
+        margin-left: 2.8rem;
+        margin-top: 2rem;
+    }
+    .project-h3{
+        font-size: 40px;
+        color: #f2f2f2;
+    }
+    .project-img1{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+    .row1{
+        margin-bottom: 20px;
+    }
+    .row7{
+        margin-bottom: 20px;
+    }
+    .robin{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .project-btn{
+        border: none;
+        background: none;
+        color: #974f10;
+        font-size: 16px;
+        width: 100px;
+    }
+    
+    /* About page */
+    
+    .about-h4{
+        color: #974f10;
+        font-size: 24px;
+        margin-left: 2.8rem;
+        margin-top: 2rem;
+    }
+    .about{
+        margin: 20px 2.8rem;
+        margin-bottom: 100px;
+    }
+    .row2{
+        margin-bottom: 32px;
+    }
+    .about-img{
+        position: relative;
+        width: 100%;
+        height: 360px;
+        padding: 5px;
+        padding-left: 15px;
+    }
+    .about-text{
+        margin-top: 11px;
+        padding-right: 4rem;
+        padding-left: 20px;
+        color: #f2f2f2;
+    }
+    .about-btn{
+        background-color: #974f10;
+        color: #f2f2f2;
+        height: 53px;
+        width: 205px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+    }
+    .about-col2{
+        line-height: 34px;
+        padding-left: 15px;
+    }
+    .about-h6{
+        color: #974f10;
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    label{
+        font-size: 16px;
+        color: #f2f2f2;
+    }
+    var{
+        font-style: normal;
+        color: #974f10;
+    }
+    .row4{
+        padding: 0 40px;
+        width: 100%;
+        display: flex;
+    }
+    .about-h5{
+        color: #f2f2f2;
+    }
+    .about-col1{
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 32px 0;
+        width: 176px;
+        height: 145px;
+        border: 1px solid #974f10;
+        margin: 10px;
+    }
+    .text{
+        font-size: 16px;
+        color: #974f10;
+    }
+    .about-icon{
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+        background: rgba(242, 153, 74, 0.2);
+        padding: 10px 20px;
+        width: 920px;
+        margin-left: 110px;
+    }
+    .first-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .second-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .abt-icon{
+        padding: 10px 0;
+        margin: 0 30px;
+    }
+    
+    /* Contact page */
+    
+    .contact-h4{
+        color: #974f10;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .contact{
+        margin-left: 2.7rem;
+        margin-right: 2rem;
+        padding-right: 7px;
+    }
+    .contact-col6{
+        padding: 32px 0;
+        padding-right: 4rem;
+    }
+    .contact-img{
+        width: 100%;
+        height: 100%;
+        padding-right: 16px;
+    }
+    .contact p{
+        color: #f2f2f2;
+    }
+    .var{
+        color: #f2f2f2;
+    }
+    .form-control{
+        border: 1px solid #974f10;
+        background: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        color: #f2f2f2;
+    }
+    .form-control::placeholder{
+        color: #f2f2f2;
+    }
+    .contact-btn{
+        width: 100%;
+        background-color: #974f10;
+        height: 41px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        color: #f2f2f2;
     }
 }
