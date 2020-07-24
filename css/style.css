@@ -62,13 +62,16 @@ body{
     overflow-x: hidden;
     height: 100vh;
     width: 100%;
-    background-color: #e5e5e5;
+    background-color: #2b2a2a;
 }
 .col-md-11, .col-md-1, .col-md-4, .col-md-8, .col-md-6, .col-md-5{
     position: relative;
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
 }
 @font-face{
     font-family: sin;
@@ -86,8 +89,8 @@ li{
     list-style: none;
 }
 nav{
-    background-color: #fff;
-    color: #000;
+    background-color: #1f1f1f;
+    color: #fff;
     z-index: 1;
     position: fixed;
 }
@@ -101,7 +104,7 @@ nav{
     font-weight: 600;
 }
 nav a{
-    color: #000;
+    color: #fff;
 }
 nav a:hover{
     color: #F2994A;
@@ -145,6 +148,7 @@ h3{
 }
 .home-text{
     font-size: 16px;
+    color: #f2f2f2;
 }
 .static-col{
     background: rgba(242, 153, 74, 0.2);
@@ -178,6 +182,7 @@ a .ion-social-twitter{
     background-color: #F2994A;
     height: 41px;
     width: 138px;
+    color: #f2f2f2;
     border-radius: 5px;
     border: none;
     font-size: 16px;
@@ -218,6 +223,7 @@ a .ion-social-twitter{
 }
 .project-h3{
     font-size: 40px;
+    color: #f2f2f2;
 }
 .project-img1{
     position: relative;
@@ -271,9 +277,11 @@ a .ion-social-twitter{
     margin-top: 11px;
     padding-right: 4rem;
     padding-left: 20px;
+    color: #f2f2f2;
 }
 .about-btn{
     background-color: #F2994A;
+    color: #f2f2f2;
     height: 53px;
     width: 205px;
     border-radius: 5px;
@@ -291,6 +299,7 @@ a .ion-social-twitter{
 }
 label{
     font-size: 16px;
+    color: #f2f2f2;
 }
 var{
     font-style: normal;
@@ -302,7 +311,7 @@ var{
     display: flex;
 }
 .about-h5{
-    color: #000;
+    color: #f2f2f2;
 }
 .about-col1{
     text-align: center;
@@ -361,14 +370,21 @@ var{
     height: 100%;
     padding-right: 16px;
 }
+.contact p{
+    color: #f2f2f2;
+}
 .var{
-    color: #000;
+    color: #f2f2f2;
 }
 .form-control{
     border: 1px solid #F2994A;
     background: none;
     border-radius: 5px;
     margin-bottom: 20px;
+    color: #f2f2f2;
+}
+.form-control::placeholder{
+    color: #f2f2f2;
 }
 .contact-btn{
     width: 100%;
@@ -377,6 +393,7 @@ var{
     border-radius: 5px;
     border: none;
     font-size: 16px;
+    color: #f2f2f2;
 }
 #myBtn{
     display: none;
@@ -516,8 +533,12 @@ var{
     .row3{
         margin: 0 24px;
     }
+    .about-col2{
+        padding-left: 0;
+    }
     .row4{
         padding: 0 0;
+        padding-left: 25px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -546,7 +567,6 @@ var{
     /* Project page */
     .project{
         margin: 10px 40px;
-        margin-bottom: 76px;
     }
     .project-col2{
         margin: 0px 0;
@@ -563,7 +583,7 @@ var{
         background: none;
         border: none;
         font-size: 14px;
-        padding: 8px;
+        padding: 16px 5px;
     }
     .nav-pills .nav-link.active{
         background: none;
@@ -601,6 +621,7 @@ var{
         margin-top: 8px;
     }
     .project-btn{
+        align-self: inherit;
         border: none;
         background: none;
         color: #F2994A;
@@ -630,7 +651,7 @@ var{
         padding-right: 0px;
     }
     .var{
-        color: #000;
+        color: #f2f2f2;
     }
     .form-control{
         border: 1px solid #F2994A;
@@ -744,10 +765,14 @@ var{
         height: 600px;
         padding: 0 38px;
     }
+    .about-col2{
+        padding-left: 0;
+    }
     .row4{
-        padding: 0 40px;
         width: 100%;
         display: flex;
+        align-content: center;
+        margin-left: 5px;
     }
     .about-text{
         margin: 0 38px;
@@ -794,7 +819,6 @@ var{
     /* Project page */
     .project{
         margin: 10px 40px;
-        margin-bottom: 76px;
     }
     .project-col2{
         margin: 0px 0;
@@ -878,7 +902,7 @@ var{
         padding-right: 0px;
     }
     .var{
-        color: #000;
+        color: #f2f2f2;
     }
     .form-control{
         border: 1px solid #F2994A;
@@ -897,14 +921,6 @@ var{
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
-    body{
-        font-family: ibm;
-        font-size: 16px;
-        overflow-x: hidden;
-        height: 100vh;
-        width: 100%;
-        background-color: #e5e5e5;
-    }
     .home{
         margin: 0 2rem;
         height: 90vh;
@@ -1094,7 +1110,7 @@ var{
         display: flex;
     }
     .about-h5{
-        color: #000;
+        color: #f2f2f2;
     }
     .about-col1{
         text-align: center;
@@ -1157,7 +1173,7 @@ var{
         padding-right: 16px;
     }
     .var{
-        color: #000;
+        color: #f2f2f2;
     }
     .form-control{
         border: 1px solid #F2994A;
@@ -1176,14 +1192,6 @@ var{
 }
 
 @media (min-width: 1024px) and (max-width: 1200px){
-    body{
-        font-family: ibm;
-        font-size: 16px;
-        overflow-x: hidden;
-        height: 100vh;
-        width: 100%;
-        background-color: #e5e5e5;
-    }
     .home{
         margin: 0 2rem;
         height: 90vh;
@@ -1376,7 +1384,7 @@ var{
         margin-bottom: 30px;
     }
     .about-h5{
-        color: #000;
+        color: #f2f2f2;
     }
     .about-col1{
         text-align: center;
@@ -1439,7 +1447,7 @@ var{
         padding-right: 16px;
     }
     .var{
-        color: #000;
+        color: #f2f2f2;
     }
     .form-control{
         border: 1px solid #F2994A;
