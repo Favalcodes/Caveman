@@ -20,7 +20,12 @@
     <title>Caveman</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
+
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="navbar-brand">Caveman</div>
@@ -46,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main data-barba="wrapper" data-barba-namespace="project">
         <h4 class="project-h4">PROJECTS</h4>
         <div class="row project">
             <div class="col-md-11 project-col1">
@@ -75,13 +80,15 @@
                                     </div>
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">Random City Sunset</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal1">View more</button>
                                     </div>
                                 </div>
                                 <div class="row row7">
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">Red Riding Hood</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal2">View more</button>
                                     </div>
                                     <div class="col-md-8">
                                         <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
@@ -93,7 +100,8 @@
                                     </div>
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">YUM!</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal3">View more</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +113,8 @@
                                     </div>
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">Random City Sunset</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal1">View more</button>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +123,8 @@
                                 <div class="row row7">
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">Red Riding Hood</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal2">View more</button>
                                     </div>
                                     <div class="col-md-8">
                                         <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
@@ -126,7 +136,8 @@
                                 <div class="row row7">
                                     <div class="col-md-4 robin">
                                         <h3 class="text-dark project-h3">Red Riding Hood</h3>
-                                        <button class="project-btn">View more</button>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal2">View more</button>
                                     </div>
                                     <div class="col-md-8">
                                         <img src="./images/Rectangle 6 (1).png" alt="project-img1" class="project-img1">
@@ -140,8 +151,9 @@
                                         <img src="./images/Rectangle 7.jpg" alt="project-img1" class="project-img1">
                                     </div>
                                     <div class="col-md-4 robin">
-                                        <h3 class="text-dark project-h3">Random City Sunset</h3>
-                                        <button class="project-btn">View more</button>
+                                        <h3 class="text-dark project-h3">YUM!</h3>
+                                        <button class="project-btn" data-toggle="modal"
+                                        data-target="#modal3">View more</button>
                                     </div>
                                 </div>
                             </div>
@@ -163,16 +175,106 @@
                 </ul>
             </div>
         </div>
+        <!--Modal boxes -->
+
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+
+                    <img src="./images/Rectangle 5 (2).png" alt="" class="h-100 w-100">
+                    <h4 class="project-h4">Random City Sunset</h4>
+                    <p class="pl-4 pr-4">
+                        This is a random text that gives more description to the image there
+                    </p>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                        data-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+
+                    <img src="./images/Rectangle 6 (1).png" alt="" class="h-100 w-100">
+                    <h4 class="project-h4">Red Robin Hood</h4>
+                    <p class="pl-4 pr-4">
+                        This is a random text that gives more description to the image there
+                    </p>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                        data-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Body-->
+                <div class="modal-body mb-0 p-0">
+
+
+                    <img src="./images/Rectangle 7.jpg" alt="" class="h-100 w-100">
+                    <h4 class="project-h4">YUM!</h4>
+                    <p class="pl-4 pr-4">
+                        This is a random text that gives more description to the image there
+                    </p>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+                        data-dismiss="modal">Close</button>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
     </main>
 
-    <div class="overlay">
-        <div class="layer layer1"></div>
-        <div class="layer layer2"></div>
-        <div class="layer layer3"></div>
-        <div class="layer layer4"></div>
-        <div class="layer layer5"></div>
-        <div class="layer layer6"></div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

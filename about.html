@@ -20,7 +20,12 @@
     <title>Caveman</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
+
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="navbar-brand">Caveman</div>
@@ -46,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main data-barba="wrapper" data-barba-namespace="about">
         <h4 class="about-h4">ABOUT ME</h4>
         <div class="row about">
             <div class="col-md-11">
@@ -65,7 +70,7 @@
 
                         <p>I am passionate about empowering you to tell your story through creative strategic services
                             and documenting cherishable moments that you can look back on fondly for years to come.</p>
-                        <button class="about-btn">Schedule a meeting</button>
+                        <a href="contact.html"><button class="about-btn">Schedule a meeting</button></a>
                     </div>
                 </div>
 

@@ -20,7 +20,12 @@
     <title>Caveman</title>
 </head>
 
-<body>
+<body data-barba="wrapper">
+
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="navbar-brand">Caveman</div>
@@ -46,7 +51,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main data-barba="wrapper" data-barba-namespace="contact">
         <div class="row contact">
             <div class="col-md-6 contact-col6">
                 <h4 class="contact-h4">Contact Me</h4>
@@ -85,15 +90,6 @@
             </div>
         </div>
     </main>
-
-    <div class="overlay">
-        <div class="layer layer1"></div>
-        <div class="layer layer2"></div>
-        <div class="layer layer3"></div>
-        <div class="layer layer4"></div>
-        <div class="layer layer5"></div>
-        <div class="layer layer6"></div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
