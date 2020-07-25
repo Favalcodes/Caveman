@@ -129,6 +129,7 @@ nav a:hover{
     height: 80vh;
     left: 64px;
     margin-top: 20px;
+    object-fit: cover;
 }
 .img-text{
     bottom: 40px;
@@ -235,8 +236,7 @@ a .ion-social-twitter{
     width: 100%;
     height: 300px;
     padding: 10px;
-}
-.cup{
+    object-fit: cover;
     border-radius: 20px;
 }
 .row1{
@@ -280,6 +280,7 @@ a .ion-social-twitter{
     height: 360px;
     padding: 5px;
     padding-left: 15px;
+    object-fit: cover;
 }
 .about-text{
     margin-top: 11px;
@@ -380,6 +381,7 @@ var{
     width: 100%;
     height: 100%;
     padding-right: 16px;
+    object-fit: cover;
 }
 .contact p{
     color: #f2f2f2;
@@ -454,6 +456,7 @@ var{
         height: 508px;
         left: 0;
         margin-top: 0;
+        object-fit: cover;
     }
     .img-text{
         display: none;
@@ -526,6 +529,7 @@ var{
         width: 100%;
         height: 360px;
         padding: 0 38px;
+        object-fit: cover;
     }
     .row4{
         padding: 0 40px;
@@ -622,6 +626,8 @@ var{
         width: 100%;
         height: 200px;
         padding: 0px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     .row1{
         margin-bottom: 20px;
@@ -667,6 +673,7 @@ var{
         width: 100%;
         height: 100%;
         padding-right: 0px;
+        object-fit: cover;
     }
     .var{
         color: #f2f2f2;
@@ -713,6 +720,7 @@ var{
         height: 700px;
         left: 0;
         margin-top: 0;
+        object-fit: cover;
     }
     .img-text{
         display: none;
@@ -785,6 +793,7 @@ var{
         width: 100%;
         height: 600px;
         padding: 0 38px;
+        object-fit: cover;
     }
     .about-col2{
         padding-left: 0;
@@ -880,6 +889,8 @@ var{
         width: 100%;
         height: 350px;
         padding: 0px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     .row1{
         margin-bottom: 20px;
@@ -924,6 +935,7 @@ var{
         width: 100%;
         height: 100%;
         padding-right: 0px;
+        object-fit: cover;
     }
     .var{
         color: #f2f2f2;
@@ -964,6 +976,7 @@ var{
         height: 100%;
         left: 64px;
         margin-top: 20px;
+        object-fit: cover;
     }
     .img-text{
         bottom: 10px;
@@ -984,8 +997,8 @@ var{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: left;
-        padding-top: 175px;
+        justify-content: center;
+        padding-top: 0px;
         padding-right: 40px;
         padding-left: 20px;
     }
@@ -1065,6 +1078,8 @@ var{
         width: 100%;
         height: 300px;
         padding: 10px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     .row1{
         margin-bottom: 20px;
@@ -1105,6 +1120,7 @@ var{
         width: 100%;
         height: 360px;
         padding: 5px;
+        object-fit: cover;
     }
     .about-text{
         margin-top: 11px;
@@ -1204,6 +1220,7 @@ var{
         width: 100%;
         height: 100%;
         padding-right: 16px;
+        object-fit: cover;
     }
     .var{
         color: #f2f2f2;
@@ -1232,17 +1249,19 @@ var{
     }
     .home{
         margin: 0 2rem;
-        height: 90vh;
+        height: 100%;
         margin-bottom: 100px;
     }
     .home-col1{
         padding: 20px 10px;
-        height: 100%;
+        width: auto;
+        height: 50%;
         align-items: center;
     }
     .home-img{
+        object-fit: contain;
         width: 100%;
-        height: 90vh;
+        height: 100%;
         left: 64px;
         margin-top: 20px;
     }
@@ -1268,6 +1287,7 @@ var{
         padding-top: 175px;
         padding-right: 40px;
         padding-left: 20px;
+        height: 50%;
     }
     h3{
         font-size: 48px;
@@ -1346,6 +1366,8 @@ var{
         width: 100%;
         height: 300px;
         padding: 10px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     .row1{
         margin-bottom: 20px;
@@ -1386,6 +1408,7 @@ var{
         width: 100%;
         height: 360px;
         padding: 5px;
+        object-fit: cover;
     }
     .about-text{
         margin-top: 11px;
@@ -1481,11 +1504,13 @@ var{
     .contact-col6{
         padding: 32px 0;
         padding-right: 4rem;
+        height: 50%;
     }
     .contact-img{
         width: 100%;
         height: 100%;
         padding-right: 16px;
+        object-fit: cover;
     }
     .var{
         color: #f2f2f2;
@@ -1543,6 +1568,7 @@ var{
         align-items: center;
     }
     .home-img{
+        object-fit: cover;
         width: 397px;
         height: 80vh;
         left: 64px;
@@ -1653,6 +1679,8 @@ var{
         width: 100%;
         height: 300px;
         padding: 10px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     .row1{
         margin-bottom: 20px;
@@ -1695,6 +1723,7 @@ var{
         height: 360px;
         padding: 5px;
         padding-left: 15px;
+        object-fit: cover;
     }
     .about-text{
         margin-top: 11px;
@@ -1795,6 +1824,7 @@ var{
         width: 100%;
         height: 100%;
         padding-right: 16px;
+        object-fit: cover;
     }
     .contact p{
         color: #f2f2f2;
