@@ -1186,6 +1186,7 @@ var{
         width: 85%;
         right: 10px;
         box-sizing: content-box;
+        right: 25px;
     }
     .first-row{
         display: flex;
